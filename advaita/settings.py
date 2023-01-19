@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-nkso2k*##_kn85w64+6m)je$@xnfi*b(m2!2*@uyvgxbu4a@lk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://advaita-demo.herokuapp.com', 'advaita-demo.herokuapp.com', 'www.advaita-demo.herokuapp.com' ]
 
 
 # Application definition
