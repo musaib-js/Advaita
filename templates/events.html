@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% block title %}Events | Advaita IIIT-Bh{% endblock title %}
+{% block extracss %} <link rel="stylesheet" href="../static/css/events.css">{% endblock extracss %}
+{% block body %}
+    <section id="events">
+        <div id="eventsdesc">
+            <div>EVENTS AND SCHEDULE</div>
+            <div>Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada etiam.
+                Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at dolor ac id. Amet
+                sapien viverra tristique blandit quis molestie odio quis egestas. Viverra ultrices cursus ac sodales
+                convallis et sollicitudin. Sit justo venenatis odio tempus sed id cursus.</div>
+        </div>
+        <img src="../static/images/events/hero.webp">
+    </section>
+
+    <section id="schedule">
+        <div class="redtext">SCHEDULE</div>
+        <div id="schCards">
+            <div class="scheduleCard small">
+                <img src="../static/images/events/schedule1.png">
+                <div>DAY 1</div>
+            </div>
+            <div class="scheduleCard">
+                <img src="../static/images/events/schedule2.png">
+                <div>DAY 2</div>
+            </div>
+            <div class="scheduleCard small">
+                <img src="../static/images/events/schedule3.png">
+                <div>DAY 3</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventsList">
+        <div class="redtext">EVENTS</div>
+        <div class="eventCards">
+            <a href="/events/technicalevents">
+                <div class="eventCardWrap">
+                    <div class="eventCard">
+                        <div>TECHNICAL<br>EVENTS</div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra
+                            malesuada
+                            etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                            dolor ac
+                            id.
+                        </div>
+                    </div>
+                    <div class="eventCardBg"></div>
+                </div>
+            </a>
+            <a href="/events/culturalevents">
+                <div class="eventCardWrap">
+                    <div class="eventCard">
+                        <div>CULTURAL<br>EVENTS</div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra
+                            malesuada
+                            etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                            dolor ac
+                            id.
+                        </div>
+                    </div>
+                    <div class="eventCardBg"></div>
+                </div>
+            </a>
+            <a href="../eventdetails">
+                <div class="eventCardWrap">
+                    <div class="eventCard">
+                        <div>GUEST<br>LECTURES</div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra
+                            malesuada
+                            etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                            dolor ac
+                            id.
+                        </div>
+                    </div>
+                    <div class="eventCardBg"></div>
+                </div>
+            </a>
+            <a href="../eventdetails">
+                <div class="eventCardWrap">
+                    <div class="eventCard">
+                        <div>PRO-NITES</div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra
+                            malesuada
+                            etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                            dolor ac
+                            id.
+                        </div>
+                    </div>
+                    <div class="eventCardBg"></div>
+                </div>
+            </a>
+            <a href="../eventdetails">
+                <div class="eventCardWrap">
+                    <div class="eventCard">
+                        <div>EXHIBITION</div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra
+                            malesuada
+                            etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                            dolor ac
+                            id.
+                        </div>
+                    </div>
+                    <div class="eventCardBg"></div>
+                </div>
+            </a>
+            <a href="../eventdetails">
+                <div class="eventCardWrap">
+                    <div class="eventCard">
+                        <div>HACKATHON</div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra
+                            malesuada
+                            etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                            dolor ac
+                            id.
+                        </div>
+                    </div>
+                    <div class="eventCardBg"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    {% endblock body %}

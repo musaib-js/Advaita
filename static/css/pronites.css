@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    background: linear-gradient(90deg, #273D58 0%, #1A0505 100%);
+    color: white;
+}
+
+.pronites {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18rem;
+    padding-bottom: 15rem;
+}
+
+.pronites:nth-of-type(2n+1) {
+    background: linear-gradient(150deg, #1A283A 0%, #210303 100%);
+}
+
+.events {
+    padding: 5rem 0;
+    font-size: 1rem;
+}
+
+.pronites,
+.pronites.events {
+    gap: 6vw;
+}
+
+.eventscontent {
+    width: 400px;
+    opacity: 0.7;
+    text-align: justify;
+    font-size: 0.9rem;
+    padding: 0;
+}
+
+.pronitescontent {
+    width: 400px;
+}
+
+.pronitescontent>div:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pronitescontent>div:nth-of-type(2) {
+    opacity: 0.7;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.pronites img {
+    width: 450px;
+}
+
+@media (max-width: 975px) {
+    .pronites {
+        flex-direction: column-reverse;
+        padding-top: 10rem;
+        padding-bottom: 7rem;
+        width: unset;
+        gap: 15px;
+    }
+
+    .pronites img {
+        width: 90vw;
+        max-width: 500px;
+    }
+
+    .pronitescontent>div:nth-of-type(1) {
+        text-align: center;
+    }
+
+    .events:nth-of-type(2n) {
+        flex-direction: column;
+    }
+
+    .pronitescontent,
+    .eventscontent {
+        width: 90vw;
+        max-width: 500px;
+    }
+
+    .pronites.events {
+        padding: 5rem 0;
+        gap: 0;
+    }
+}

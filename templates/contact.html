@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us{% endblock title %}
+{% block extracss %}<link rel="stylesheet" href="../static/css/contact.css">{% endblock extracss %}
+{% block body %}
+    <section id="cform">
+        <h1>CONTACT US</h1>
+        <h4 style = "text-align:center; color: white;">  {% for m in messages %}
+            {{m}}
+            {% endfor %}
+        </h4>
+        <form class="cf" action = "/contact/" method = "POST">
+            <div class="half left cf">
+                <input name = "name" type="text" id="input-name" placeholder="Name">
+                <input name = "email" type="email" id="input-email" placeholder="Email address">
+                <input name = "subject" type="text" id="input-subject" placeholder="Subject">
+            </div>
+            <div class="half right cf">
+                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+            </div>
+            {% csrf_token %}
+            <button type="submit" id="input-submit">
+                <i class="fa-solid fa-paper-plane"></i> Submit
+            </button>
+        </form>
+    </section>
+
+{% endblock body %}
