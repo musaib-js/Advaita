@@ -37,3 +37,6 @@ def eventdetails(request, slug):
 
 def pronites(request):
     return render(request, 'pronites.html')
+
+def sponsors(request):
+    return render(request, 'sponsors.html')
