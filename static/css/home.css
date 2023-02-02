@@ -58,7 +58,6 @@
     border-radius: 1rem 0 0 0;
 }
 
-
 .swiper {
     height: 30rem;
     width: 57rem;
@@ -85,29 +84,25 @@
     #herologo img {
         display: none;
     }
-
     #herologo {
         height: auto;
         margin-bottom: 20px;
     }
-
     #herologotext {
         text-align: center;
         margin: 0 1rem;
-        margin-top: 5rem;
+        margin-top: 150px;
     }
-
     #herocards {
         flex-direction: column;
         align-items: center;
         gap: 20px;
         margin-bottom: 20px;
+        margin-top: 100px;
     }
-
     .swiper {
         width: 38rem;
     }
-
     #herosection {
         display: flex;
         flex-direction: column;
@@ -119,15 +114,14 @@
     }
 }
 
-
 @media (max-width: 630px) {
     .swiper {
         width: 20rem;
     }
 }
 
-/* Hero section end */
 
+/* Hero section end */
 
 
 /* About section start */
@@ -171,19 +165,17 @@
         padding-bottom: 4rem;
         width: unset;
     }
-
     #aboutcontent {
         width: 90vw;
     }
-
     #about img {
         width: 90vw;
     }
-
     #aboutcontent>div:nth-of-type(1) {
         text-align: center;
     }
 }
+
 
 /* About section end */
 
@@ -222,11 +214,9 @@
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
-
     #features>div {
         height: unset;
     }
-
     #features>div:nth-of-type(2n+1) {
         align-items: unset;
     }
@@ -234,7 +224,6 @@
 
 
 /* Features section end */
-
 
 
 /* YTVideo section start  */
@@ -259,19 +248,19 @@
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
+    margin-top: 250px;
 }
 
 @media (max-width: 945px) {
     #ytvideo {
         padding-top: 8rem;
         padding-bottom: 0;
-
     }
-
     #ytvideo iframe {
         width: 90vw;
     }
 }
+
 
 /* YTVideo section end */
 
@@ -345,22 +334,20 @@
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
-
     #contacts>div {
         width: 90vw;
     }
-
     #quicklinks {
         justify-content: space-between;
         max-width: 350px;
         margin: 0 auto;
     }
-
     #connectwithus {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
+
 
 /* Contact section end */

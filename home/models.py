@@ -2,11 +2,13 @@ from django.db import models
 
 # Create your models here.
 class Event(models.Model):
+    serial = models.IntegerField()
     name = models.CharField(max_length=250)
     timeslot = models.DateTimeField()
     description  = models.TextField()
     thumbnail = models.ImageField(upload_to='media')
     slug = models.CharField(max_length = 50)
+
 
     def __str__(self):
         return self.name

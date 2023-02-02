@@ -30,7 +30,19 @@ def eventdetails(request, slug):
     elif slug == "culturalevents":
         heading = "Cultural Events"
         headerimg = '/static/images/events/tech.png'
-    events = Event.objects.filter(slug = slug)
+    elif slug == "filmandtheatre":
+        heading = "Film and Theatre Litfest"
+        headerimg = '/static/images/events/tech.png'
+    elif slug == "paracosm":
+        heading = "Paracosm"
+        headerimg = '/static/images/events/tech.png'
+    elif slug == "esports":
+        heading = "E-Sports"
+        headerimg = '/static/images/events/tech.png'
+    elif slug == "foodcsr":
+        heading = "Food CSR"
+        headerimg = '/static/images/events/tech.png'
+    events = Event.objects.filter(slug = slug).order_by('serial')
     context = {'events':events, 'heading':heading, 'headerimg':headerimg}
     return render(request, 'eventdetails.html', context)
 
