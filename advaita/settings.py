@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -8,13 +9,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-nkso2k*##_kn85w64+6m)je$@xnfi*b(m2!2*@uyvgxbu4a@lk'
+from dotenv import load_dotenv
+load_dotenv()
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://advaita-demo.herokuapp.com', 'advaita-demo.herokuapp.com', 'www.advaita-demo.herokuapp.com' ]
+ALLOWED_HOSTS = ['https://advaita-demo.herokuapp.com', 'advaita-demo.herokuapp.com', 'www.advaita-demo.herokuapp.com', 'roshan.centralindia.cloudapp.azure.com', 'www.roshan.centralindia.cloudapp.azure.com', 'www.advaita-iiitbh.in', 'advaita-iiitbh.in' ]
 #ALLOWED_HOSTS = [] 
 
 
