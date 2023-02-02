@@ -1,8 +1,12 @@
 name: Update server
-on: [push]
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
 jobs:
   build:
-    name: Build
+    name: Update server
     runs-on: ubuntu-latest
     steps:
       - name: Updating latest changes on server
