@@ -22,3 +22,14 @@ class Contact(models.Model):
     def __str__(self):
         return self.name
     
+class Sponsorship(models.Model):
+    email = models.EmailField(max_length = 200)
+    company_name = models.CharField(max_length = 200)
+    contact_person = models.CharField(max_length = 200)
+    designation = models.CharField(max_length = 200)
+    mail = models.EmailField(max_length = 200)
+    sponsorship_type = models.CharField(max_length = 200)
+
+    def __str__(self):
+        return self.company_name
+    

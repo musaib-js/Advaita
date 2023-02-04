@@ -39,8 +39,11 @@ def eventdetails(request, slug):
     elif slug == "esports":
         heading = "E-Sports"
         headerimg = '/static/images/events/tech.png'
-    elif slug == "foodcsr":
-        heading = "Food CSR"
+    elif slug == "food":
+        heading = "Food"
+        headerimg = '/static/images/events/tech.png'
+    elif slug == "csr":
+        heading = "CSR"
         headerimg = '/static/images/events/tech.png'
     events = Event.objects.filter(slug = slug).order_by('serial')
     context = {'events':events, 'heading':heading, 'headerimg':headerimg}
