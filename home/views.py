@@ -3,6 +3,13 @@ from django.http import HttpResponse
 from .models import Event, Contact
 from django.contrib import messages
 
+
+def custom_404(request, exception):
+    return render(request,'404.html')
+
+def custom_500(request):
+    return render(request,'404.html')
+
 # Create your views here.
 def home(request):
     return render(request, 'home.html')

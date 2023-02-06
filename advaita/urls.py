@@ -8,6 +8,12 @@ admin.site.site_header  =  "Admin Panel - Advaita IIIT-BH"
 admin.site.site_title  =  "Advaita IIIT-BH"
 admin.site.index_title  =  "Advaita IIIT-BH"
 
+from django.conf.urls import handler404, handler500
+
+handler404 = 'home.views.custom_404'
+handler500 = 'home.views.custom_500'
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls'))
