@@ -14,7 +14,7 @@ load_dotenv()
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://advaita-demo.herokuapp.com', 'advaita-demo.herokuapp.com', 'www.advaita-demo.herokuapp.com', 'roshan.centralindia.cloudapp.azure.com', 'www.roshan.centralindia.cloudapp.azure.com', 'www.advaita-iiitbh.in', 'advaita-iiitbh.in', '127.0.0.1', 'localhost' ]
 #ALLOWED_HOSTS = [] 
