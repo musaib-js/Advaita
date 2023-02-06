@@ -45,6 +45,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'advaita.urls'
+CSRF_TRUSTED_ORIGINS = ['https://*.advaita-iiitbh.in','https://*.127.0.0.1']
 
 TEMPLATES = [
     {
