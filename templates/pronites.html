@@ -6,57 +6,21 @@
         <div class="pronitescontent">
             <div>PRO NITES</div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada etiam.
-                    Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at dolor ac id.
-                    Amet
-                    sapien viverra tristique blandit quis molestie odio quis egestas. Viverra ultrices cursus ac sodales
-                    convallis et sollicitudin. Sit justo venenatis odio tempus sed id cursus. Gravida faucibus a amet
-                    mus. Sit justo venenatis odio tempus sed id cursus. Gravida faucibus a amet mus.
+                <p>Unleash the fun at the concerts of some of India's finest musicians, comedians, and DJs! Get ready to groove and make memories that'll last a lifetime. Not only will you breathe fun-filled flavours of air, and meet new people; but you'll also become a part of an ever-blossoming community of IIIT Bhubaneswar. So, buckle up and grab your squad and let the good vibes roll, adding an extra perfection to the hymn of your steps
                 </p>
             </div>
         </div>
-        <div><img src="../static/images/pronites/pro-nites.svg"></div>
+        <div><img src="/static/images/pronites/pro-nites.svg"></div>
     </section>
+    {% for x in pronites  %}
     <section class="pronites events">
-        <div><img src="../static/images/pronites/loremipsum.svg"></div>
+        <div><img src="/media/{{x.thumbnail}}"></div>
         <div class="eventscontent">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada etiam.
-                    Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at dolor ac id.
-                    Amet
-                    sapien viverra tristique blandit quis molestie odio quis egestas. Viverra ultrices cursus ac sodales
-                    convallis et sollicitudin. Sit justo venenatis odio tempus sed id cursus. Gravida faucibus a amet
-                    mus. Sit justo venenatis odio tempus sed id cursus. Gravida faucibus a amet mus.
+                <p>{{x.description}}
                 </p>
             </div>
         </div>
     </section>
-    <section class="pronites events">
-        <div class="eventscontent">
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada etiam.
-                    Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at dolor ac id.
-                    Amet
-                    sapien viverra tristique blandit quis molestie odio quis egestas. Viverra ultrices cursus ac sodales
-                    convallis et sollicitudin. Sit justo venenatis odio tempus sed id cursus. Gravida faucibus a amet
-                    mus. Sit justo venenatis odio tempus sed id cursus. Gravida faucibus a amet mus.
-                </p>
-            </div>
-        </div>
-        <div><img src="../static/images/pronites/loremipsum.svg"></div>
-    </section>
-    <section class="pronites events">
-        <div><img src="../static/images/pronites/loremipsum.svg"></div>
-        <div class="eventscontent">
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada etiam.
-                    Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at dolor ac id.
-                    Amet
-                    sapien viverra tristique blandit quis molestie odio quis egestas. Viverra ultrices cursus ac sodales
-                    convallis et sollicitudin. Sit justo venenatis odio tempus sed id cursus. Gravida faucibus a amet
-                    mus. Sit justo venenatis odio tempus sed id cursus. Gravida faucibus a amet mus.
-                </p>
-            </div>
-        </div>
-    </section>
+    {% endfor %}
 {% endblock body %}

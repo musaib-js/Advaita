@@ -45,13 +45,15 @@ def eventdetails(request, slug):
     elif slug == "csr":
         heading = "CSR"
         headerimg = '/static/images/events/tech.png'
-    events = Event.objects.filter(slug = slug).order_by('serial')
+    events = Event.objects.filter(slug = slug).order_by('-timeslot')
     context = {'events':events, 'heading':heading, 'headerimg':headerimg}
     return render(request, 'eventdetails.html', context)
 
 
 def pronites(request):
-    return render(request, 'pronites.html')
+    pronites = Event.objects.filter(slug = "pronites").order_by('-timeslot')
+    context = {'pronites': pronites}
+    return render(request, 'pronites.html', context)
 
 def sponsors(request):
     return render(request, 'sponsors.html')
