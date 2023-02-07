@@ -32,3 +32,11 @@ class Sponsorship(models.Model):
     def __str__(self):
         return self.company_name
     
+class Sponsor(models.Model):
+    name = models.CharField(max_length=250)
+    type = models.CharField(max_length = 300)
+    thumbnail = models.FileField(upload_to='media')
+
+    def __str__(self):
+        return self.name
+    
